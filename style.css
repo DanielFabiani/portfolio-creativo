@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left bottom, #DA643D 0%, 14.470428488610665%, #2B2F30 49.406176805496216%, 74.70308840274811%, #2B2B2B 100%);
+    height: 100vh;
+}
