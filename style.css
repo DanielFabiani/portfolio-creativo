@@ -1,3 +1,8 @@
+:root {
+    /* colores */
+    --text-light-blue: #CED7F2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +14,99 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to left bottom, #DA643D 0%, 14.470428488610665%, #2B2F30 49.406176805496216%, 74.70308840274811%, #2B2B2B 100%);
+    background-image: linear-gradient(to top right, #DA643D 0%, 14.470428488610665%, #2B2F30 49.406176805496216%, 74.70308840274811%, #2B2B2B 100%);
+    background-repeat: no-repeat;
     height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    height: 100vh;
+    gap: 10px;
+}
+
+.card_photo {
+    background-image: url("./assets/img/foto_perfil.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 8px rgba(242, 169, 153, 0.25);
+    grid-column: 2 / 4;
+    grid-row: 5 / 9;
+    margin: 0;
+}
+
+.card_github {
+    background-image: url("./assets/img/githu.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.card_linkdin {
+    background-image: url("./assets/img/linkedin.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+.card-personal {
+    border: 4px solid #262626;
+    border-radius: 20px;
+    z-index: -1;
+    grid-column: 3 / 6;
+    grid-row: 4 / 7;
+    margin: 0;
+}
+
+.card-personal h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    display: grid;
+    justify-items: end;
+    margin: 10px;
+    color: #CED7F2;
+}
+
+.snippet {
+    background-image: url("./assets/img/CSS-Grid.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 6 / 10;
+    grid-row: 1 / 6;
+}
+
+.title {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    color: #D5441D ;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    justify-items: center;
+}
+
+.skills {
+    font-weight: 200;
+    font-size: 3rem;
+    color: var(--text-light-blue) ;
+    grid-column: 6;
+    grid-row: 7 / 9;
+    transform: rotate(270deg);
+    display: grid;
+    align-items: end;
 }
